@@ -31,6 +31,15 @@
           colors: {
             clifford: '#da373d',
             'btn-clr': '#FF4240',
+            'client-h3': '#131318',
+            'client-p': '#DD186399',
+            'footer-big-clt': '#FFF',
+            'hockey-p-clt': '#13131863',
+            'progress-clr1': '#FF0000',
+            'progress-p-clr': '#13131899',
+            'product-p-clr': '#13131899',
+            'product-p2-clr': '#13131880',
+            
           }
         }
       }
@@ -46,47 +55,462 @@
 </style>
 
 </head>
-<body class="font-manrope">
+<body class="font-manrope ">
 
     <header class="md:container md:mx-auto my-14">
 
-        <!-- navigation bar started -->
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base">
-                  <li class="text-btn-clr font-bold"><a>Home</a></li>
-                  <li><a>About</a></li>
-                  <li><a>Pages</a></li>
-                  <li><a>Blog</a></li>
-                  <li><a>Contact</a></li>
-                </ul>
+      <!-- navigation bar started -->
+       <nav>
+         
+         <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
               </div>
-              <a class="btn btn-ghost text-4xl font-extrabold">Hockey<span class="text-btn-clr">’</span>s</a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1 text-base">
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base">
                 <li class="text-btn-clr font-bold"><a>Home</a></li>
-                  <li><a>About</a></li>
-                  <li><a>Pages</a></li>
-                  <li><a>Blog</a></li>
-                  <li><a>Contact</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
               </ul>
             </div>
-            <div class="navbar-end">
-              <a class="btn btn-error text-white bg-btn-clr font-bold pl-6 pt-4 pr-6 pb-4">Get Ticket</a>
-            </div>
+            <a class="btn btn-ghost text-4xl font-extrabold">Hockey<span class="text-btn-clr">’</span>s</a>
           </div>
-        <!-- navbar finish -->
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-base">
+              <li class="text-btn-clr font-bold"><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <i class="fa-solid fa-magnifying-glass mr-6"></i>
+            <a class="btn btn-error text-white bg-btn-clr font-bold pl-6 pt-4 pr-6 pb-4">Get Ticket</a>
+          </div>
+        </div>
+     
+       </nav>
+        <!-- =============navbar finish============================ -->
+
+        <!-- slider section started -->
+        <section>
+          <div class="carousel w-full lg:h-[550px] mt-12">
+
+            <!-- slide one -->
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="Images/1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <!-- =============slide one finish============== -->
+
+            <!-- slide two started -->
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="Images/2.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <!--================= slide two finish================================ -->
+            
+          </div>
+        </section>
+       <!-- =========slider section finish================================== -->
 
     </header>
 
-    <main class="md:container md:mx-auto"></main>
+    <main class="md:container md:mx-auto">
 
-    <footer></footer>
+
+      <!-- hockey club section started -->
+
+      <!-- contain section started -->
+      <section class="my-24">
+        <h3 class="text-center font-extrabold	text-4xl text-client-h3">Professional Hockeys Club</h3>
+        <p class="text-center my-6  text-base font-medium text-hockey-p-clt	">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br>
+           dolor. Purus urna in sit nullam proin. </p>
+
+      </section>
+      <!-- contain section finish -->
+
+      <!-- progress section started -->
+      <section>
+        <div class="lg:flex  mb-24 justify-around">
+          <!-- progress bar 1 -->
+          <div class="text-center">
+            <div class="radial-progress text-error " style="--value:87;" role="progressbar"><span class="font-extrabold text-client-h3 text-2xl">87%</span></div>
+            <div>
+              <h3 class="text-center text-xl font-semibold pt-6 pb-4">Prayer Facility</h3>
+            <p class="text-center font-normal text-base text-progress-p-clr mb-6">Amet consectetur. Condimentum <br>
+               dignissim adipiscing .</p>
+            </div>
+          </div>
+
+          <!-- progress bar 2 -->
+          <div class="text-center">
+            <div class="radial-progress text-success" style="--value:95;" role="progressbar"><span class="font-extrabold text-client-h3 text-2xl">95%</span></div>
+            <div><h3 class="text-center text-xl font-semibold pt-6 pb-4">Experienced Coach</h3>
+              <p class="text-center font-normal text-base text-progress-p-clr mb-6">Amet consectetur. Condimentum <br>
+                 dignissim adipiscing .</p>
+                </div>
+          </div>
+
+          <!-- progressbar 3 -->
+
+          <div class="text-center">
+            <div class="radial-progress  text-warning" style="--value:90;" role="progressbar"><span class="font-extrabold text-client-h3 text-2xl">90%</span></div>
+            <div>
+              <h3 class="text-center text-xl font-semibold pt-6 pb-4">Senior Player</h3>
+            <p class="text-center font-normal text-base text-progress-p-clr mb-6">Amet consectetur. Condimentum <br>
+               dignissim adipiscing .</p>
+            </div>
+          </div>
+
+          <!-- progress bar 4 -->
+          
+          <div class="text-center">
+            <div class="radial-progress text-info" style="--value:80;" role="progressbar"><span class="font-extrabold text-client-h3 text-2xl">90%</span></div>
+            <div>
+              <h3 class="text-center text-xl font-semibold pt-6 pb-4">Training Ground</h3>
+            <p class="text-center font-normal text-base text-progress-p-clr mb-6">Amet consectetur. Condimentum <br>
+               dignissim adipiscing .</p>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      <!-- progress section finish -->
+
+      <!--===== hockey club section finish=== -->
+
+      <!-- product section started -->
+      <section>
+        <h3 class="text-center text-4xl font-extrabold mb-6 text-client-h3">Our New Products</h3>
+        <p class="text-center font-medium	text-base	text-product-p-clr">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br>
+           dolor. Purus urna in sit nullam proin. </p>
+      </section>
+      <!-- card started -->
+      <section>
+        <!-- card main started -->
+        <div class="lg:flex lg:ml-24">
+            
+          <!-- card 1 -->
+
+          <div class="card  bg-base-100 rounded-2xl	 lg:flex-row items-center shadow-xl ">
+            <div class="p-6	">
+              <figure><img class="" src="Images/5.png" alt="Shoes" /></figure>
+            </div>
+            <div class="card-body">
+              <!-- card star section -->
+              <div class="flex items-center">
+                <i class="fa-solid fa-star text-amber-400"></i>
+                <p class="ml-2 text-base font-medium text-product-p-clr">5.0</p>
+                <i class="fa-regular fa-eye"></i>
+                <p class="ml-2 text-base font-medium text-product-p-clr">20</p>
+                <i class="fa-regular fa-heart"></i>
+                <p class="ml-2 text-base font-medium text-product-p-clr">200</p>
+              </div>
+              <!-- finish card star section -->
+              <h2 class="font-extrabold	text-xl	client-h3">World Cup Flags Football</h2>
+              <p class="text-product-p-clr">Dolor sit amet consectetur. Ut urna diam <br>
+                quis sagittis. </p>
+
+                <div class="flex">
+                  <p class="font-extrabold text-lg text-btn-clr">Price - $22.00</p>
+                  <p class="text-base	font-medium text-product-p2-clr"><i class="fa-solid fa-cart-shopping ml-5 mr-2"></i>Delivery Fee : Free</p>
+                </div>
+              
+            </div>
+          </div>
+
+          <!-- card 2 -->
+
+          <div class="card  bg-base-100 rounded-2xl	sm:gap-6 lg:flex-row items-center lg:ml-36 shadow-xl ">
+            <div class="p-6	">
+              <figure><img class="" src="Images/6.png" alt="Shoes" /></figure>
+            </div>
+            <div class="card-body">
+              <!-- card star section -->
+              <div class="flex items-center">
+                <i class="fa-solid fa-star text-amber-400"></i>
+                <p class="ml-2 text-base font-medium text-product-p-clr">5.0</p>
+                <i class="fa-regular fa-eye"></i>
+                <p class="ml-2 text-base font-medium text-product-p-clr">20</p>
+                <i class="fa-regular fa-heart"></i>
+                <p class="ml-2 text-base font-medium text-product-p-clr">200</p>
+              </div>
+              <!-- finish card star section -->
+              <h2 class="font-extrabold	text-xl	client-h3">World Cup Flags Football</h2>
+              <p class="text-product-p-clr">Dolor sit amet consectetur. Ut urna diam <br>
+                quis sagittis. </p>
+
+                <div class="flex">
+                  <p class="font-extrabold text-lg text-btn-clr">Price - $22.00</p>
+                  <p class="text-base	font-medium text-product-p2-clr"><i class="fa-solid fa-cart-shopping ml-5 mr-2"></i>Delivery Fee : Free</p>
+                </div>
+              
+            </div>
+          </div>
+
+          <!-- finish card 2 -->
+
+          
+          </div>
+          <!-- card finish -->
+
+          <!-- second row card main started -->
+          <div class="lg:flex mt-6 lg:ml-24">
+            
+            <!-- card 1 -->
+  
+            <div class="card  bg-base-100 rounded-2xl	 lg:flex-row items-center shadow-xl">
+              <div class="p-6	">
+                <figure><img class="" src="Images/7.png" alt="Shoes" /></figure>
+              </div>
+              <div class="card-body">
+                <!-- card star section -->
+                <div class="flex items-center">
+                  <i class="fa-solid fa-star text-amber-400"></i>
+                  <p class="ml-2 text-base font-medium text-product-p-clr">5.0</p>
+                  <i class="fa-regular fa-eye"></i>
+                  <p class="ml-2 text-base font-medium text-product-p-clr">20</p>
+                  <i class="fa-regular fa-heart"></i>
+                  <p class="ml-2 text-base font-medium text-product-p-clr">200</p>
+                </div>
+                <!-- finish card star section -->
+                <h2 class="font-extrabold	text-xl	client-h3">Cap For Hockeys</h2>
+                <p class="text-product-p-clr">Dolor sit amet consectetur. Ut urna diam <br>
+                  quis sagittis. </p>
+  
+                  <div class="flex">
+                    <p class="font-extrabold text-lg text-btn-clr">Price - $22.00</p>
+                    <p class="text-base	font-medium text-product-p2-clr"><i class="fa-solid fa-cart-shopping ml-5 mr-2"></i>Delivery Fee : Free</p>
+                  </div>
+                
+              </div>
+            </div>
+  
+            <!-- card 2 -->
+  
+            <div class="card  bg-base-100 rounded-2xl	 lg:flex-row items-center lg:ml-36 shadow-xl">
+              <div class="p-6	">
+                <figure><img class="" src="Images/8.png" alt="Shoes" /></figure>
+              </div>
+              <div class="card-body">
+                <!-- card star section -->
+                <div class="flex items-center">
+                  <i class="fa-solid fa-star text-amber-400"></i>
+                  <p class="ml-2 text-base font-medium text-product-p-clr">5.0</p>
+                  <i class="fa-regular fa-eye"></i>
+                  <p class="ml-2 text-base font-medium text-product-p-clr">20</p>
+                  <i class="fa-regular fa-heart"></i>
+                  <p class="ml-2 text-base font-medium text-product-p-clr">200</p>
+                </div>
+                <!-- finish card star section -->
+                <h2 class="font-extrabold	text-xl	client-h3">World Cup Flags Football</h2>
+                <p class="text-product-p-clr">Dolor sit amet consectetur. Ut urna diam <br>
+                  quis sagittis. </p>
+  
+                  <div class="flex">
+                    <p class="font-extrabold text-lg text-btn-clr">Price - $22.00</p>
+                    <p class="text-base	font-medium text-product-p2-clr"><i class="fa-solid fa-cart-shopping ml-5 mr-2"></i>Delivery Fee : Free</p>
+                  </div>
+                
+              </div>
+            </div>
+  
+            <!-- finish card 2 -->
+  
+            
+            </div>
+            <!-- second row card finish -->
+
+
+            <!-- third row card started -->
+            <div class="lg:flex mt-6 lg:ml-24">
+            
+              <!-- card 1 -->
+    
+              <div class="card  bg-base-100 rounded-2xl	 lg:flex-row items-center shadow-xl">
+                <div class="p-6	">
+                  <figure><img class="" src="Images/9.png" alt="Shoes" /></figure>
+                </div>
+                <div class="card-body">
+                  <!-- card star section -->
+                  <div class="flex items-center">
+                    <i class="fa-solid fa-star text-amber-400"></i>
+                    <p class="ml-2 text-base font-medium text-product-p-clr">5.0</p>
+                    <i class="fa-regular fa-eye"></i>
+                    <p class="ml-2 text-base font-medium text-product-p-clr">20</p>
+                    <i class="fa-regular fa-heart"></i>
+                    <p class="ml-2 text-base font-medium text-product-p-clr">200</p>
+                  </div>
+                  <!-- finish card star section -->
+                  <h2 class="font-extrabold	text-xl	client-h3">World Cup Flags Football</h2>
+                  <p class="text-product-p-clr">Dolor sit amet consectetur. Ut urna diam <br>
+                    quis sagittis. </p>
+    
+                    <div class="flex">
+                      <p class="font-extrabold text-lg text-btn-clr">Price - $22.00</p>
+                      <p class="text-base	font-medium text-product-p2-clr"><i class="fa-solid fa-cart-shopping ml-5 mr-2"></i>Delivery Fee : Free</p>
+                    </div>
+                  
+                </div>
+              </div>
+    
+              <!-- card 2 -->
+    
+              <div class="card  bg-base-100 rounded-2xl	 lg:flex-row items-center lg:ml-36 shadow-xl">
+                <div class="p-6	">
+                  <figure><img class="" src="Images/10.png" alt="Shoes" /></figure>
+                </div>
+                <div class="card-body">
+                  <!-- card star section -->
+                  <div class="flex items-center">
+                    <i class="fa-solid fa-star text-amber-400"></i>
+                    <p class="ml-2 text-base font-medium text-product-p-clr">5.0</p>
+                    <i class="fa-regular fa-eye"></i>
+                    <p class="ml-2 text-base font-medium text-product-p-clr">20</p>
+                    <i class="fa-regular fa-heart"></i>
+                    <p class="ml-2 text-base font-medium text-product-p-clr">200</p>
+                  </div>
+                  <!-- finish card star section -->
+                  <h2 class="font-extrabold	text-xl	client-h3">World Cup Flags Football</h2>
+                  <p class="text-product-p-clr">Dolor sit amet consectetur. Ut urna diam <br>
+                    quis sagittis. </p>
+    
+                    <div class="flex">
+                      <p class="font-extrabold text-lg text-btn-clr">Price - $22.00</p>
+                      <p class="text-base	font-medium text-product-p2-clr"><i class="fa-solid fa-cart-shopping ml-5 mr-2"></i>Delivery Fee : Free</p>
+                    </div>
+                  
+                </div>
+              </div>
+    
+              <!-- finish card 2 -->
+    
+              
+              </div>
+            <!-- third row card finish -->
+      </section>
+      <!-- card finish -->
+      <!-- ========product section finish======= -->
+
+      <!-- Clients Question section started -->
+
+      <section>
+        <!-- //////////////////<hr>/////////////////// -->
+        <h3 class="text-4xl font-extrabold text-client-h3 text-center mt-8 ">Clients Question</h3>
+        <p class="text-center font-medium client-p mt-6 ">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br>
+           dolor. Purus urna in sit nullam proin. </p>
+           
+          <!-- <hr////////////////////// class="mt-6">/////////////// -->
+
+           <!-- hero section added -->
+           <div class="hero  border-x border-y mt-14">
+            <div class="hero-content flex-col lg:flex-row lg:gap-8">
+              <img src="Images/11.png" class="max-w-sm rounded-lg shadow-2xl" />
+             <!-- accordion section started -->
+              <div>
+                
+                <!-- first question -->
+                <div class="collapse collapse-plus">
+                  <input type="radio" name="my-accordion-3" checked="checked" /> 
+                  <div class="collapse-title text-xl font-medium">
+                    Our Equipment
+                  </div>
+                  <div class="collapse-content"> 
+                    <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim <br>
+                       sagittis turpis in magna.</p>
+                  </div>
+                </div>
+                <!--///////////////////// <hr>////////////////////// -->
+
+                <!-- second question -->
+                <!--////////////////////////// <hr>////////////////////////////////////////// -->
+                <div class="collapse collapse-plus ">
+                  <input type="radio" name="my-accordion-3" /> 
+                  <div class="collapse-title text-xl font-medium">
+                    Hockey Training
+                  </div>
+                  <div class="collapse-content"> 
+                    <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim  <br>
+                      sagittis turpis in magna.</p>
+                  </div>
+                </div>
+                <!--////////////////////////////// <hr>/////////////////////////// -->
+
+                <!-- third question -->
+                <div class="collapse collapse-plus">
+                  <input type="radio" name="my-accordion-3" /> 
+                  <div class="collapse-title text-xl font-medium">
+                    Private Lessons
+                  </div>
+                  <div class="collapse-content"> 
+                    <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim <br>
+                       sagittis turpis in magna.</p>
+                  </div>
+                </div>
+                <!--//////////////////////////// <hr>///////////////////////////////////// -->
+
+                 <!-- fourth question -->
+                 <div class="collapse collapse-plus">
+                  <input type="radio" name="my-accordion-3" /> 
+                  <div class="collapse-title text-xl font-medium">
+                    Ski Touring
+                  </div>
+                  <div class="collapse-content"> 
+                    <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim <br>
+                       sagittis turpis in magna.</p>
+                  </div>
+                </div>
+                <!--/////////////////////////// <hr>///////////////////////////////////////////// -->
+
+                 <!-- fifth question -->
+                 <div class="collapse collapse-plus">
+                  <input type="radio" name="my-accordion-3" /> 
+                  <div class="collapse-title text-xl font-medium">
+                    Booking
+                  </div>
+                  <div class="collapse-content"> 
+                    <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim <br>
+                       sagittis turpis in magna.</p>
+                  </div>
+                </div>
+                <!--//////////////////////// <hr>////////////////////////////////////////////////////////// -->
+
+                 <!-- sixth question -->
+                 <div class="collapse collapse-plus">
+                  <input type="radio" name="my-accordion-3" /> 
+                  <div class="collapse-title text-xl font-medium">
+                    Pricings
+                  </div>
+                  <div class="collapse-content"> 
+                    <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim <br>
+                       sagittis turpis in magna.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- accordion section finish -->
+            </div>
+          </div>
+           <!-- ===hero section finish==== -->
+      </section>
+
+      <!-- ==============Clients Question section finish========= -->
+
+     
+
+    </main>
+
+   <footer></footer>
     
 </body>
 </html>
